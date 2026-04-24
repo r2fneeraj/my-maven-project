@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/r2fneeraj/my-maven-project.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn compile'
